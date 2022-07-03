@@ -1,0 +1,30 @@
+<resources>
+    <string name="app_name">App Pokemon</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="nav_header_title">Usantiago1</string>
+    <string name="nav_header_subtitle">github.com/Usantiago1</string>
+    <string name="nav_header_desc">Navigation header</string>
+    <string name="action_settings">Settings</string>
+
+    <string name="menu_home">Login</string>
+    <string name="menu_gallery">Registro</string>
+    <string name="menu_slideshow">Información App</string>
+
+    <string name="txt_user">Usuario</string>
+    <string name="txt_nombre">Nombre</string>
+    <string name="txt_ap">Apellido Paterno</string>
+    <string name="txt_am">Apellido Materno</string>
+    <string name="txt_email">Correo</string>
+    <string name="txt_nac">Fecha Nacimiento</string>
+    <string name="txt_password">Contraseña</string>
+    <string name="txt_status">Estatus</string>
+
+    <string name="btn_log">Iniciar Sesión</string>
+    <string name="btn_add">Crear Cuenta</string>
+
+
+
+
+
+</resources>
