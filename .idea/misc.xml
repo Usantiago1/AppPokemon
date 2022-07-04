@@ -8,10 +8,13 @@
         <entry key="app/src/main/res/layout/app_bar_main.xml" value="0.17325227963525835" />
         <entry key="app/src/main/res/layout/content_main.xml" value="0.35625" />
         <entry key="app/src/main/res/layout/fragment_login.xml" value="0.33" />
+        <entry key="app/src/main/res/layout/fragment_pokemon.xml" value="0.18177083333333333" />
         <entry key="app/src/main/res/layout/fragment_registro.xml" value="0.33" />
         <entry key="app/src/main/res/layout/fragment_slideshow.xml" value="0.17325227963525835" />
         <entry key="app/src/main/res/layout/nav_header_main.xml" value="0.35625" />
+        <entry key="app/src/main/res/layout/pokemon.xml" value="0.18072916666666666" />
         <entry key="app/src/main/res/menu/activity_main_drawer.xml" value="0.35625" />
+        <entry key="app/src/main/res/menu/main.xml" value="0.18177083333333333" />
       </map>
     </option>
   </component>

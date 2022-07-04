@@ -1,11 +1,12 @@
 package com.example.apppokemon.ui.home;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Button;
-import android.widget.TextView;
+import android.widget.EditText;
 import android.widget.Toast;
 
 import androidx.annotation.NonNull;
@@ -13,9 +14,9 @@ import androidx.fragment.app.Fragment;
 import androidx.lifecycle.ViewModelProvider;
 
 import com.example.apppokemon.Interface.ApiAlien;
-import com.example.apppokemon.Model.AddUser;
 import com.example.apppokemon.Model.Login;
 import com.example.apppokemon.databinding.FragmentLoginBinding;
+import com.example.apppokemon.ui.viewPokemon.Pokemon;
 
 import retrofit2.Call;
 import retrofit2.Callback;
@@ -35,11 +36,12 @@ public class LoginFragment extends Fragment {
         binding = FragmentLoginBinding.inflate(inflater, container, false);
         View root = binding.getRoot();
 
+
+
         final Button btnLog = binding.btnLog;
         btnLog.setOnClickListener(new View.OnClickListener() {
-            final TextView textPassword = binding.txtPassword;
-            final TextView textUser = binding.txtUser;
-
+            final EditText textPassword = binding.txtPassword;
+            final EditText textUser = binding.txtUser;
             @Override
             public void onClick(View v) {
                 String password = textPassword.getText().toString().trim();
@@ -52,6 +54,8 @@ public class LoginFragment extends Fragment {
                 }
 
 
+
+
                 Retrofit retrofit = new Retrofit.Builder()
                         .baseUrl("https://api-alien.herokuapp.com/")
                         .addConverterFactory(GsonConverterFactory.create())
@@ -62,8 +66,9 @@ public class LoginFragment extends Fragment {
                     @Override
                     public void onResponse(Call<Login> call, Response<Login> response) {
                         if (response.isSuccessful() && response.body() != null){
-
+                            startActivity(new Intent(getContext(), Pokemon.class));
                             Toast.makeText(getContext(), "Logeado", Toast.LENGTH_SHORT).show();
+
                         }else {
                             Toast.makeText(getContext(), "No Logeado", Toast.LENGTH_SHORT).show();
                         }
@@ -77,6 +82,8 @@ public class LoginFragment extends Fragment {
             }
         });
 
+
+
         //homeViewModel.getText().observe(getViewLifecycleOwner(), textView::setText);
         //final Button btnAdd = binding.btnAdd;
 
@@ -87,7 +94,6 @@ public class LoginFragment extends Fragment {
 
         return root;
     }
-
 
     @Override
     public void onDestroyView() {

@@ -5,6 +5,7 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Button;
+import android.widget.EditText;
 import android.widget.TextView;
 import android.widget.Toast;
 
@@ -36,14 +37,14 @@ public class RegistroFragment extends Fragment {
 
         final Button btnAdd = binding.btnAdd;
         btnAdd.setOnClickListener(new View.OnClickListener() {
-            final TextView textUser = binding.txtUser;
-            final TextView textNombre = binding.txtNombre;
-            final TextView textAp = binding.txtAp;
-            final TextView textAm = binding.txtAm;
-            final TextView textPassword = binding.txtPassword;
-            final TextView textNac = binding.txtNac;
-            final TextView textStatus = binding.txtStatus;
-            final TextView textEmail = binding.txtEmail;
+            final EditText textUser = binding.txtUser;
+            final EditText textNombre = binding.txtNombre;
+            final EditText textAp = binding.txtAp;
+            final EditText textAm = binding.txtAm;
+            final EditText textPassword = binding.txtPassword;
+            final EditText textNac = binding.txtNac;
+            final EditText textStatus = binding.txtStatus;
+            final EditText textEmail = binding.txtEmail;
 
 
 
