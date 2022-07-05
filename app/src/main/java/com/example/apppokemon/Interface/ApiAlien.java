@@ -3,11 +3,14 @@ package com.example.apppokemon.Interface;
 
 import com.example.apppokemon.Model.AddUser;
 import com.example.apppokemon.Model.Login;
+import com.example.apppokemon.Model.Pkemon;
 
 import retrofit2.Call;
 import retrofit2.http.Field;
 import retrofit2.http.FormUrlEncoded;
+import retrofit2.http.GET;
 import retrofit2.http.POST;
+import retrofit2.http.Path;
 
 public interface ApiAlien {
 
@@ -34,5 +37,8 @@ public interface ApiAlien {
             @Field("alien_correo") String alien_correo,
             @Field("alien_contrasenia") String alien_contrasenia
     );
+
+    @GET("pokemon/{id}")
+    Call<Pkemon>search(@Path("id") String search);
 
 }
